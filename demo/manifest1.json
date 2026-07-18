@@ -1,0 +1,22 @@
+{
+    "theme_color": "#eee",
+    "background_color": "#fff",
+    "icons": [
+        {
+            "purpose": "any",
+            "sizes": "any",
+            "type": "image/svg+xml",          
+            "src": "img/appicon.svg"
+        }
+    ],
+    "orientation": "any",
+    "display": "fullscreen",
+    "dir": "auto",
+    "lang": "en",
+    "name": "pwa-lite-1",
+    "short_name": "app1",
+    "start_url": "./",
+    "scope": "./"
+  }
+
+  

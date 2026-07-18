@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA-lite test 1</title>
+
+    <link rel="stylesheet" href="css/styleUI2.css">
+
+    <!-- prefer network -->
+    <link rel="stylesheet" href="css/style.css" data-pwa="stale">
+    <link href="../favicon.svg" rel="shortcut icon" type="image/x-icon">
+
+    <!--ignore-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aboreto:wght@400&display=swap" data-pwa-ignore>
+    <link rel="manifest" href="./manifest1.json">
+
+    <!-- 
+    -->
+
+    <!--init pwa-->
+    <script type="module" src="../dist/pwa-lite.esm.js" data-pwa="stale" ></script>
+
+
+
+</head>
+<body 
+data-pwa-stale =""
+data-pwa-network =""
+data-pwa-cache =""
+data-pwa-settings='{"name":"pwa1", "swFile":"sw2.js", "fullscreen":true, "contextMenu":false, "devtools":false, "network":[], "cache":[], "stale":[], "flushKey":true, "flushQuery":true }'>
+
+    <h1>Service worker test4</h1>
+    <p>
+        <!--dummy image-->
+        <img src="img/237-200x300.jpg" alt="image">
+
+    </p>
+
+    <p>
+        <img src="https://picsum.photos/id/870/200/300.webp" 
+        
+        srcset="https://picsum.photos/id/870/100/100.webp 100w, https://picsum.photos/id/870/480/480.webp 480w, https://picsum.photos/id/870/800/800.webp 768w"
+        
+        alt="img2">
+    </p>
+
+
+
+    
+</body>
+</html>

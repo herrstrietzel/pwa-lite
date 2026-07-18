@@ -1,0 +1,42 @@
+{
+  "name": "pwa-lite",
+  "version": "0.1.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herrstrietzel/pwa-lite.git"
+  },
+  "keywords": [],
+  "author": "herrstrietzel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/herrstrietzel/pwa-lite/issues"
+  },
+  "homepage": "https://github.com/herrstrietzel/pwa-lite#readme",
+  "main": "./dist/pwa-lite.js",
+  "module": "./dist/pwa-lite.esm.js",
+  "browser": "./dist/pwa-lite.js",
+  "exports": {
+    ".": {
+      "import": "./dist/pwa-lite.esm.js"
+    },
+    "./dist/pwa-lite.esm.js": "./dist/pwa-lite.esm.js",
+    "./dist/pwa-lite.js": "./dist/pwa-lite.js",
+    "./dist/pwa-lite.min.js": "./dist/pwa-lite.min.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c --watch",
+    "test": "node test.js"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^1.0.0",
+    "concurrently": "^9.2.1",
+    "rollup": "^3.29.5",
+    "rollup-plugin-copy": "^3.5.0"
+  },
+  "dependencies": {
+    "terser": "^5.39.0"
+  }
+}
